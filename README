@@ -1,1 +1,5 @@
 Using Selenium to test grails app which uses ZK Framework
+
+These links are helpful
+http://docs.zkoss.org/wiki/ZK_Unit_Testing
+http://docs.zkoss.org/wiki/How_to_Test_ZK_Application_with_Selenium
