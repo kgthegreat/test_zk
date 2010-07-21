@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page zscriptLanguage="GroovyGrails"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<window border="normal" title="Groovy Test" id="MainWindow" width="400px"> 
+	<zscript>
+		import test_zk.Book
+		books = Book.findAll() 
+	</zscript> 
+	<listbox>
+		<listhead>
+			<listheader label="ID"/>
+			<listheader label="Title"/>
+			<listheader label="Author"/> 
+		</listhead> 
+		<listitem forEach="#{books}">
+			<listcell label="#{each.id}"/>
+			<listcell label="#{each.title}"/>
+			<listcell label="#{each.author}"/>
+		</listitem>
+	</listbox>
+</window>

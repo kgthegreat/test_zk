@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<?page zscriptLanguage="Groovy"?>
+
+<window  border="normal" title="Groovy Test" id="MainWindow"  width="400px">
+    <textbox id="username"/>
+    <button label="Call HelloService"
+        onClick="result.value=helloService.serviceMethod(username.value)"/>
+    <separator/>
+    <label id="result"/>
+</window>
