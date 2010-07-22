@@ -10,3 +10,9 @@ http://docs.zkoss.org/wiki/How_to_Test_ZK_Application_with_Selenium
 
 
 This project aims to tell you how to combine both and test grails+zk using selenium. This project will serve as a demo.
+
+Start the grails app
+grails run-app
+
+Then start the selenium testing
+grails run-selenium
